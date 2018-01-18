@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SPTouch Version v2.2</title>
+  <meta name="author" content="Csongor Kocsis">
+  <meta name="description" content="This is a digital signage solution for the University of Southampton, Science Park">
+  <meta name="keywords" content="digital signage, signage, marketing, touchscreen, screen">
+  <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="font.css" type="text/css">
+  <link rel="stylesheet" href=" ajax-ld-main.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/materialize.css" type="text/css">
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/materialize.js"></script>
+  <script defer src="assets/js/fontawesome-all.js"></script>
+  <script src="assets/js/ajax-load.js"></script>
+</head>
+<body onload="startTime()">
+  <div class="container">
+    <!-- Page Content goes here -->
+    <div class="row equal-col">
+      <div class="col s6 logo__container">
+        <div class="logo"></div>
+      </div>
+      <div class="col s6 align-col-right">
+        <div class="time__container">
+          <div class="time__clock" id="time"></div>
+          <div class="time__date" id="date"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="searchbar">
+        <div class="col s12">
+          <button class="fil-cat search-btn blue" id="btn-a-g">A - G</button>
+        </div>
+        <div class="col s12">
+          <button class="fil-cat search-btn blue" id="btn-h-n">H - N</button>
+        </div>
+        <div class="col s12">
+          <button class="fil-cat search-btn blue" id="btn-o-t">O - T</button>
+        </div>
+        <div class="col s12">
+          <button class="fil-cat search-btn blue" id="btn-u-z">U - Z</button>
+        </div>
+        <div class="col s12">
+          <button class="fil-cat search-btn blue" id="btn-0-9">0 - 9</button>
+        </div>
+      </div>
+    </div>
+    <div class="row ajx-ld-content" id="ajaxContainer">
+    </div>
+  </div>
+  <!--Import jQuery before materialize.js-->
+
+
+  <script src="assets/js/clock.js"></script>
+</body>
+</html>
